@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background: url("../images/body_bg.png") repeat-x scroll 0 0 #FFFFFF;
+    font: 11px Arial,Helvetica,sans-serif;
+	}
+	
+/******************************************
+default HTML5 tags
+***********************************************/	
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+	}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+	}
+	
+a { outline:none;}	
+	
+/******************************************
+Container Tags
+***********************************************/	
+
+#mainContainer{
+	width:600px;
+	margin:auto;
+	}
+	
+.containerHeader{
+	padding-top:20px;
+	height:80px;
+	}
+	
+.containerHeader img{
+	float:left;
+	}
+	
+/******************************************
+Container Menu Tags
+***********************************************/	
+
+.nav{
+	float: left;
+    margin: 0;
+    padding: 12px 0 0 20px;
+	}	
+	
+.nav li{
+	display: inline;
+    float: left;
+    list-style: none outside none;
+	}
+	
+.nav li a{
+	color: #073763;
+    font-size: 12px;
+    padding: 10px 12px;
+    text-decoration: none;
+	}
+	
+.nav li a:hover,.nav li a:active{
+	background:#cfe2f3;
+	}	
+	
+.nav li ul{
+	display: block;
+    position: absolute;
+    top: 69px;
+    visibility: hidden;
+	}	
+	
+.nav li ul li a:hover{
+	background:none;
+	}	
+	
+.nav li:hover ul, .nav li a:active ul, .nav li a:focus ul {
+	visibility:visible;
+	}	
+
+.nav li ul li a{
+	padding: 18px 15px 12px;
+	}
+	
+.topbar_nav{
+	float: right;
+    margin: 0;
+    padding: 10px 0 0;
+	}
+	
+.topbar_nav li{
+	display: inline;
+    float: left;
+    list-style: none outside none;
+	}
+	
+.topbar_nav li a{
+	color: #073763;
+    padding: 0 10px;
+    text-decoration: none;
+	}	
+	
+.subnavBar input{
+	clear: both;
+    float: right;
+    height: 17px;
+    margin-top: 16px;
+	}	
+	
+/******************************************
+Container Body Tags
+***********************************************/		
+	
+.containerBody{
+	clear: both;
+    padding: 10px 0 25px;
+	}	
+	
+.containerBody .box{
+	border: 1px solid #CFE2F3;
+    float: left;
+    height: 173px;
+    margin: 8px 12px;
+    width: 173px;
+	}
+	
+.box h1{
+	color:#073763;
+	font-size:12px;
+	padding:7px 10px
+	}	
+	
+.box p{
+	font-size:11px;
+	padding:5px 10px; 
+	}	
+	
+/* Tabs and Slider tags */		
+	
+#tabs{
+	border: 0 none;
+    border-radius: 0 0 0 0;
+    clear: both;
+    padding: 10px 15px 0;
+	}	
+	
+#tabs ul{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+	}	
+	
+#tabs ul li{
+	background:#cfe2f3;
+	border:1px solid #cfe2f3;
+	}
+	
+#tabs ul li.ui-tabs-active {
+	background: none repeat scroll 0 0 #9FC5E8;
+	}	
+	
+#tabs_content{
+	border:1px solid #cfe2f3;
+	padding:15px;
+	font: 11px Arial, Helvetica, sans-serif !important;
+	}	
+	
+.ui-tabs .ui-tabs-panel {
+	padding:0px !important;
+	}	
+	
+#slider1 { 
+	height: 1%; 
+	overflow:hidden; 
+	padding: 0 0 10px;   
+	}
+	
+#slider1 .viewport { 
+	float: left; 
+	width: 440px; 
+	height: 125px; 
+	overflow: hidden; 
+	position: relative; 
+	}
+	
+#slider1 .buttons { 
+	background:url(../images/arrow_icon.png) no-repeat scroll 0 0 transparent; 
+	display: block; 
+	margin: 30px 10px 0 0; 
+	text-indent: -999em; 
+	float: left; 
+	width: 39px; 
+	height: 37px; 
+	overflow: hidden; 
+	position: relative; 
+	}
+	
+#slider1 .prev { background-position: 0px 0px;}
+#slider1 .next { background-position: -46px 0px; margin: 30px 0 0 10px;  }
+
+#slider1 .disable { 
+	visibility: hidden; 
+	}
+	
+#slider1 .overview { 
+	list-style: none; 
+	position: absolute; 
+	width: 240px; 
+	left: 0 top: 0; 
+	}
+	
+#slider1 .overview li{ 
+	float: left;
+	 margin: 0 20px 0 0; 
+	 padding: 1px; 
+	 height: 121px; 
+	 border: 1px solid #dcdcdc; 
+	 width: 440px;
+	 }		
+
+.contentDiv {
+	padding:0px 12px 12px 15px;
+	}
+	
+.contentDiv p{
+	padding-bottom:12px;
+	}
+	
+.wide, .thin { clear:both; }
+.first { padding-right:20px; }		
+
+/******************************************
+Container Footer Tags
+***********************************************/	
+
+.containerFooter{
+	width:588px;
+	background:#cfe2f3;
+	padding:6px;
+	font-size:11px;
+	color:#073763;
+	position:fixed;
+	bottom:0px;
+	}
